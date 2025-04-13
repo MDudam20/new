@@ -1118,11 +1118,12 @@
 
 .featured-projects .image-box:before{
   position: absolute;
-  content: '';
-  width: 15px;
-  height: calc(100% - 80px);
-  right: 0px;
-  top: 40px;
+    content: '';
+    width: 96%;
+    height: calc(100% - 12px);
+    right: -14px;
+    top: 40px;
+    z-index: -1;
 }
 
 .featured-projects .image-box{
@@ -1411,7 +1412,7 @@
 
 .project-block-two .inner-box .lower-content .inner{
   background: #192e5c;
-  margin-top: -170px;
+  margin-top: -30px;
 }
 
 .project-block-two .inner-box .image-box img{
@@ -2373,6 +2374,9 @@
 
 .project-block-four .inner-box .image-box img{
   width: 100%;
+  border: 2px solid #78081c;
+  padding: 4px;
+  box-shadow: 4px 5px #78081c;
 }
 
 .project-block-four .inner-box .image-box:before{

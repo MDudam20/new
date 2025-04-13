@@ -600,6 +600,9 @@ img {
 .pt_240{
   padding-top: 240px;
 }
+.pt_100{
+  padding-top: 100px;
+}
 
 .pb_280{
   padding-bottom: 280px;
@@ -619,6 +622,9 @@ img {
 
 .fs_24{
   font-size: 24px;
+}
+.fs_20{
+  font-size: 20px;
 }
 
 .blue_bg{
@@ -1683,7 +1689,7 @@ div#mCSB_1_container{
 
 .main-footer{
   position: relative;
-  background: #1e1e1e;
+  background: #78081c;
 }
 
 .footer-top{
@@ -1741,10 +1747,10 @@ div#mCSB_1_container{
   position: absolute;
   left: 0px;
   top: -4px;
-  width: 58px;
-  height: 58px;
-  line-height: 58px;
-  font-size: 26px;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 20px;
   color: #fff;
   text-align: center;
   border-radius: 50%;
@@ -1753,17 +1759,19 @@ div#mCSB_1_container{
 .footer-top .logo-widget .support-box span {
   position: relative;
   display: block;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 20px;
   color: #fff;
+  letter-spacing: 1px;
+  font-weight: 800;
 }
 
 .footer-top .logo-widget .support-box h3 {
   display: block;
-  font-size: 24px;
+  font-size: 15px;
   line-height: 32px;
   color: #fff;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .footer-top .logo-widget .support-box h3 a{
@@ -1863,7 +1871,7 @@ div#mCSB_1_container{
 .footer-bottom{
   position: relative;
   width: 100%;
-  padding: 40px 0px;
+  padding: 10px 0px;
 }
 
 .footer-bottom .copyright,
@@ -1881,6 +1889,7 @@ div#mCSB_1_container{
   display: inline-block;
   margin-right: 25px;
 }
+
 
 .footer-bottom .footer-nav li:last-child{
   margin: 0px !important;
@@ -1912,7 +1921,15 @@ div#mCSB_1_container{
   display: block;
   margin-top: 25px;
 }
-
+.footer-top .logo-widget  .footer-social{
+  position: relative;
+  display: block;
+  margin-top: 25px;
+}
+.footer-top .logo-widget  .footer-social li{
+  position: relative;
+  display: inline-block;
+}
 .footer-bottom .footer-social li{
   position: relative;
   display: inline-block;
@@ -1928,7 +1945,38 @@ div#mCSB_1_container{
   font-size: 16px;
   border-radius: 50%;
 }
-
+.footer-top .logo-widget  .footer-social li a{
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 50%;
+  background-color: #d9aa2f;
+}
+.footer-top .logo-widget  .footer-social li a:hover{
+  color: #fff;
+  background-color: #d9aa2f;
+}
 .footer-bottom .footer-social li a:hover{
   color: #fff;
+  background-color: #d9aa2f;
+}
+.flip-flop-img {
+  display: inline-block;
+  animation: flipFlop 2s infinite ease-in-out;
+}
+
+@keyframes flipFlop {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
