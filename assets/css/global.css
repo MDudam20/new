@@ -1980,3 +1980,72 @@ div#mCSB_1_container{
     transform: rotateY(360deg);
   }
 }
+
+.accordion {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  border: 1px solid #000;
+  overflow: hidden;
+  /* Add overflow property to prevent content from affecting layout */
+
+}
+
+.accordion-title {
+  background-color: #d9aa2f;
+  /* Updated question box color */
+  padding: 15px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #000;
+  /* Question text color */
+  position: relative;
+  transition: background-color 0.5s all;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.accordion-title::after {
+  content: '\25B8';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+
+.accordion-content {
+  padding: 15px;
+  display: none;
+  background-color: #fff;
+  color: #333;
+  transition: max-height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.accordion-item.active .accordion-title {
+  background-color:#78081c;
+  color: #fff;
+  border: 1px solid var(--yellow);
+}
+
+.accordion-item.active .accordion-title::after {
+  content: '\25BE';
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+  padding: 20px;
+  color: var(--tj-color-common-black);
+
+  background-color: #fff;
+}
+
+@media(max-width:770px) {
+  .accordion {
+      padding: 30px 0px;
+  }
+}
+
