@@ -567,7 +567,7 @@
 .skills-section .inner-content .single-item{
 border: 3px solid #fff;
 border-radius: 10px;
-height: 380px;
+height: 360px;
 }
 .skills-section .inner-content .single-item h6{
   color:#d9aa2f;
@@ -576,6 +576,7 @@ height: 380px;
   color: #f6f9ff;
   text-align: center;
     padding: 12px 0px;
+    font-size: 13px;
 }
 .skills-section .inner-content .single-item .icon-box{
   min-height: 65px;
@@ -1565,9 +1566,11 @@ height: 380px;
     left: 125%;
   }
 }
-
+.contact-section{
+  background-color: rgb(120, 8, 28, 0.9) ;
+}
 .contact-section .pattern-layer{
-  width: 1045px;
+  width: 100%;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;

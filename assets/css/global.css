@@ -7,6 +7,7 @@
 
  ***/
 
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   margin:0px;
@@ -119,14 +120,20 @@ textarea:focus{
 
 p{
   position: relative;
-  font-family: 'Mulish', sans-serif;
+  /* font-family: 'Mulish', sans-serif; */
+  font-family: "Poppins", sans-serif;
   margin: 0px;
   transition: all 500ms ease;
+  font-size: 16px;
+  color: #000;
+  text-align: justify;
 }
 
 h1,h2,h3,h4,h5,h6{
   position:relative;
-  font-family: 'Mulish', sans-serif;
+  /* font-family: 'Mulish', sans-serif; */
+  font-family: "Playfair Display", serif;
+
   font-weight: 400;
   color: #222222;
   margin: 0px;
@@ -2042,10 +2049,25 @@ div#mCSB_1_container{
 
   background-color: #fff;
 }
-
+.accordion-content ul li :before {
+  background: #3da561;
+}
+.accordion-content ul li :before {
+  background: #78081c;
+  position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    left: -4%;
+    top: 7px;
+    clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+}
 @media(max-width:770px) {
   .accordion {
       padding: 30px 0px;
   }
 }
 
+.sec-title h2{
+  color: #78081c;
+}
